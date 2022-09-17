@@ -1,2 +1,7 @@
 # nba-predictor
-nba api to predict stats
+
+### Contributors: Mousa Najjar, Ameel Aziz, Jonathan Liu
+
+**Work in Progress**
+
+NBA API to predict future NBA stats.
