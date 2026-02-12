@@ -1,2 +1,5 @@
 fastapi==0.128.0
 pydantic==2.12.5
+sqlalchemy>=2.0
+requests>=2.31
+beautifulsoup4>=4.12
