@@ -10,7 +10,9 @@ BASE_URL = "https://www.basketball-reference.com"
 INDEX_URL = f"{BASE_URL}/players/"
 
 HEADERS = {
-    "User-Agent": "nba-predictor/1.0 (educational project)"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://www.google.com"
 }
 
 
@@ -69,7 +71,7 @@ def parse_active_players(html: str):
             "full_name": full_name,
             "position": position,
             "height": get_height(height),
-            "weight": int(weight),
+            "weight": int(weight if weight else -1),
             "birthdate": get_date_from_string(birthdate)
         })
 
